@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+  <h1>Green Haven</h1>
+  <p>A happy outdoor space for everyone!</p>
+</header>
+
+<nav>
+  <a href="#activities">Activities</a>
+  <a href="#garden">Garden</a>
+</nav>
+
+<section id="activities">
+  <h2>Fun for Everyone!</h2>
+
+  <div class="activities">
+    <div class="card">
+      <h3>Adventure Zone</h3>
+        <video id="Gamesandactivities" poster="Adventure_Zone.jpg" width="200px" height="200px" onclick="playVideo()">
+          <source src="Games and Activities.mp4" type="video/mp4">
+          Your browser does not support the video tag
+        </video>
+    </div>
+
+    <div class="card">
+      <h3>Secret Garden</h3>
+      <video id="garden" poster="Garden.jpg" width="200px" height="200px" onclick="playVideo1()">
+          <source src="Secret Garden.mp4" type="video/mp4">
+          Your browser does not support the video tag
+        </video>
+    </div>
+
+    <div class="card">
+      <h3>Outdoor Classroom</h3>
+      <video id="classroom" poster="Outdoor_Classroom.jpg" width="200px" height="200px" onclick="playVideo2()">
+          <source src="Outdoor classroom.mp4" type="video/mp4">
+          Your browser does not support the video tag
+        </video>
+    </div>
+
+    <div class="card">
+      <h3>Family Picnic</h3>
+      <video id="picnic" poster="Family_Picnic.jpg" width="200px" height="200px" onclick="playVideo3()">
+          <source src="Family Picnic.mp4" type="video/mp4">
+          Your browser does not support the video tag
+        </video>
+    </div>
+  </div>
+
+  <button onclick="pickActivity()">
+    Pick an Activity 
+  </button>
+
+  <p id="suggestion">Ready for some fun?</p>
+</section>
+
+<section id="garden">
+  <h2>Our Green Mission</h2>
+  <p>Let's grow a greener school together!</p>
+</section>
+
+<footer>
+  Green Haven — Growing Together!
+</footer>
+<script src="./main.js"></script>
+    
+</body>
+</html>
